@@ -57,7 +57,9 @@ fs.readFile('MOCK_DATA.json', 'utf8', (err, data) => {
             longitude: item.longitude,
             description: item.description,
             author: item.author,
-            address: item.address
+            address: item.address,
+            date: item.date,
+            time: item.time
         };
     });
 
