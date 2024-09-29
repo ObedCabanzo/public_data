@@ -62,6 +62,8 @@ fs.readFile('MOCK_DATA.json', 'utf8', (err, data) => {
             links: item.links,
             social_media: item.social_media,
             prices: item.prices,
+            place: item.place,
+            city: item.city,
         };
     });
     // Guardar el JSON en un archivo
