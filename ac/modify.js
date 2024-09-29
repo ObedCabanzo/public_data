@@ -53,10 +53,11 @@ fs.readFile('MOCK_DATA.json', 'utf8', (err, data) => {
             name: item.name,
             categories: categoriesObject,
             price: item.price,
-            adress: item.adress,
             latitude: item.latitude,
             longitude: item.longitude,
-            description: item.description
+            description: item.description,
+            author: item.author,
+            address: item.address
         };
     });
 
