@@ -52,17 +52,18 @@ fs.readFile('MOCK_DATA.json', 'utf8', (err, data) => {
             id: item.id,
             name: item.name,
             categories: categoriesObject,
-            price: item.price,
             latitude: item.latitude,
             longitude: item.longitude,
             description: item.description,
             author: item.author,
             address: item.address,
             date: item.date,
-            time: item.time
+            time: item.time,
+            links: item.links,
+            social_media: item.social_media,
+            prices: item.prices,
         };
     });
-
     // Guardar el JSON en un archivo
     fs.writeFile('around_the_corner_data.json', JSON.stringify(around_the_corner_data, null, 2), (err) => {
         if (err) {
